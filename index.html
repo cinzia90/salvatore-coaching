@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salvatore Ruberto – Personal Coach | Coaching Online</title>
+  <meta name="description" content="Salvatore Ruberto, atleta agonista e personal coach. Coaching online personalizzato per neofili e chi si allena già. Risultati concreti, supporto costante." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAVIGAZIONE -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <img src="img/logo.jpg" alt="Salvatore Ruberto Personal Coach" class="nav-logo-img" />
+    </a>
+    <span class="nav-credit">by <a href="https://www.instagram.com/rosatocinzia/" target="_blank" rel="noopener"><strong>Cinzia Rosato</strong></a></span>
+    <ul class="nav-links">
+      <li><a href="#chi-sono">Chi sono</a></li>
+      <li><a href="#percorsi">Percorsi</a></li>
+      <li><a href="#metodo">Metodo</a></li>
+      <li><a href="#contatti">Contatti</a></li>
+      <li><a href="#contatti" class="btn-nav">Inizia ora</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <ul class="nav-mobile hidden" id="nav-mobile">
+    <li><a href="#chi-sono" onclick="closeMenu()">Chi sono</a></li>
+    <li><a href="#percorsi" onclick="closeMenu()">Percorsi</a></li>
+    <li><a href="#metodo" onclick="closeMenu()">Metodo</a></li>
+    <li><a href="#contatti" onclick="closeMenu()">Contatti</a></li>
+    <li><a href="#contatti" class="btn-nav" onclick="closeMenu()">Inizia ora</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="hero-tag">Personal Coach &middot; Coaching Online &middot; Tutta Italia</span>
+      <h1 class="hero-title">
+        Allenati.<br>
+        Migliora.<br>
+        <em>Vinci.</em>
+      </h1>
+      <p class="hero-sub">
+        Percorsi personalizzati costruiti su di te &mdash; che tu stia muovendo i primi passi
+        o voglia finalmente allenarti con un metodo serio.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contatti" class="btn-primary">Inizia il tuo percorso</a>
+        <a href="#percorsi" class="btn-outline">Scopri i percorsi</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="img/bg-cover.jpg" alt="Salvatore Ruberto – IFBB Athlete" style="object-position: center 20%;" />
+    </div>
+  </div>
+</section>
+
+<!-- CHI SONO -->
+<section id="chi-sono">
+  <div class="container">
+    <div class="chisono-inner">
+
+      <div class="chisono-video">
+        <video id="chisono-video" autoplay muted playsinline>
+          <source src="img/video-3.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="chisono-text">
+        <span class="section-tag">Chi sono</span>
+        <h2 class="section-title">Sono <em>Salvatore Ruberto</em></h2>
+        <p>
+          Sono un atleta agonista e personal coach. Lo sport &egrave; la mia quotidianit&agrave; e la mia
+          passione pi&ugrave; grande: vivo in palestra, e questa esperienza &egrave; ci&ograve; che porto
+          nel coaching di ogni persona che seguo.
+        </p>
+        <p>
+          Con il coaching online aiuto le persone a migliorare fisicamente e mentalmente attraverso
+          un percorso strutturato, personalizzato e costantemente monitorato. Non ti mando una scheda
+          e sparisco: costruiamo insieme il tuo cambiamento, passo dopo passo.
+        </p>
+        <p>
+          Obiettivo? Risultati concreti &mdash; non casualit&agrave;.
+        </p>
+        <ul class="qualifiche">
+          <li>Atleta agonista con anni di esperienza in gara internazionale</li>
+          <li>Personal Coach specializzato in coaching online</li>
+          <li>Percorsi per chi inizia da zero e per chi si allena gi&agrave;</li>
+          <li>Supporto diretto e costante durante tutto il percorso</li>
+        </ul>
+        <a href="#contatti" class="cta-btn">Contattami su WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERCORSI -->
+<section id="percorsi">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Percorsi</span>
+      <h2 class="section-title">Scegli il tuo <em>percorso</em></h2>
+      <p>Due cammini pensati per livelli diversi. Stesso metodo, stesso impegno.</p>
+    </div>
+    <div class="percorsi-grid">
+
+      <!-- NEOFILO -->
+      <div class="percorso-card">
+        <h3>Neofilo</h3>
+        <p class="percorso-label">Per chi entra in palestra per la prima volta</p>
+        <p class="percorso-desc">
+          Parti da zero senza paura. Ti guido dall&rsquo;inizio, con un approccio graduale,
+          sicuro e costruito sulla tua situazione attuale.
+        </p>
+        <ul class="percorso-list">
+          <li>Colloquio iniziale gratuito</li>
+          <li>Scheda di allenamento su misura per principianti</li>
+          <li>Linee guida alimentari semplici e pratiche</li>
+          <li>Spiegazione degli esercizi e della tecnica</li>
+          <li>Check periodici e aggiustamenti progressivi</li>
+          <li>Supporto e motivazione costante</li>
+        </ul>
+        <a href="#contatti" class="btn-primary">Prenota il consulto gratuito</a>
+      </div>
+
+      <!-- CHI SI ALLENA GIA' -->
+      <div class="percorso-card featured">
+        <h3>Mi alleno gi&agrave;</h3>
+        <p class="percorso-label-dark">Per chi ha esperienza e vuole un metodo serio</p>
+        <p class="percorso-desc">
+          Hai gi&agrave; qualche mese o anno di palestra ma senti che ti manca struttura,
+          progressione e un supporto professionale. &Egrave; il momento di fare il salto di qualit&agrave;.
+        </p>
+        <ul class="percorso-list">
+          <li>Analisi della scheda attuale e dei punti deboli</li>
+          <li>Programma periodizzato e progressivo</li>
+          <li>Piano alimentare adatto al tuo livello</li>
+          <li>Ottimizzazione del recupero e del carico</li>
+          <li>Check periodici intensivi sui progressi</li>
+          <li>Supporto diretto durante tutto il percorso</li>
+        </ul>
+        <a href="#contatti" class="btn-primary-dark">Prenota il consulto gratuito</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- IL METODO -->
+<section id="metodo">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Come funziona</span>
+      <h2 class="section-title">Il mio <em>metodo</em></h2>
+      <p>Un percorso strutturato in 4 fasi. Nulla &egrave; lasciato al caso.</p>
+    </div>
+    <div class="metodo-grid">
+
+      <div class="metodo-step">
+        <div class="step-number">01</div>
+        <h3>Colloquio iniziale</h3>
+        <p>Valutiamo insieme il tuo punto di partenza, i tuoi obiettivi e da dove cominciare. Gratuito e senza impegno.</p>
+      </div>
+
+      <div class="metodo-step">
+        <div class="step-number">02</div>
+        <h3>Piano personalizzato</h3>
+        <p>Scheda di allenamento e linee guida alimentari costruite su misura per te. Non schede standard: il tuo piano, per i tuoi obiettivi.</p>
+      </div>
+
+      <div class="metodo-step">
+        <div class="step-number">03</div>
+        <h3>Check periodici</h3>
+        <p>Il percorso viene monitorato nel tempo. Valutazione progressi, analisi risultati, eventuali modifiche. Se qualcosa non funziona, si sistema.</p>
+      </div>
+
+      <div class="metodo-step">
+        <div class="step-number">04</div>
+        <h3>Supporto costante</h3>
+        <p>Non sei mai lasciato da solo. Supporto diretto per chiarire dubbi, correggere errori e mantenere alta la motivazione. Il coaching &egrave; presenza, non solo scheda.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTATTI -->
+<section id="contatti">
+  <div class="container">
+    <div class="contatti-inner">
+
+      <div class="contatti-info">
+        <span class="section-tag">Contatti</span>
+        <h2 class="section-title">Inizia il tuo <em>cambiamento</em></h2>
+        <p>
+          Compila il modulo: ti contatto io via WhatsApp per valutare insieme da dove partire.
+          Il consulto iniziale &egrave; gratuito e senza impegno.
+        </p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/393272345980">Scrivimi direttamente</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div>
+              <h4>Instagram</h4>
+              <a href="https://www.instagram.com/salvatore_ruberto90/" target="_blank" rel="noopener">@salvatore_ruberto90</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div>
+              <h4>Dove</h4>
+              <p>Coaching 100% online &mdash; disponibile in tutta Italia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <div class="contact-form-box">
+          <h3>Prenota il consulto gratuito</h3>
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required />
+              </div>
+              <div class="form-group">
+                <label for="cognome">Cognome</label>
+                <input type="text" id="cognome" name="cognome" placeholder="Il tuo cognome" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Telefono / WhatsApp</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+39 333 000 0000" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span style="font-weight:400;opacity:.5;text-transform:none;">(facoltativa)</span></label>
+              <input type="email" id="email" name="email" placeholder="nome@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="percorso">Tipo di percorso</label>
+              <select id="percorso" name="percorso" required>
+                <option value="">Seleziona il percorso</option>
+                <option value="Neofilo – Prima volta in palestra">Neofilo &ndash; Prima volta in palestra</option>
+                <option value="Mi alleno già – Voglio un metodo serio">Mi alleno gi&agrave; &ndash; Voglio un metodo serio</option>
+                <option value="Non so ancora">Non so ancora &ndash; voglio un consiglio</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="obiettivo">Il tuo obiettivo</label>
+              <textarea id="obiettivo" name="obiettivo" placeholder="Descrivi brevemente il tuo obiettivo e la tua situazione attuale…" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn-form">Invia su WhatsApp &#8594;</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="img/logo.jpg" alt="Salvatore Ruberto Personal Coach" class="footer-logo-img" />
+      <p>Personal Coach &middot; Atleta Agonista<br>Coaching online in tutta Italia</p>
+    </div>
+    <div class="footer-links">
+      <h4>Link rapidi</h4>
+      <ul>
+        <li><a href="#chi-sono">Chi sono</a></li>
+        <li><a href="#percorsi">Percorsi</a></li>
+        <li><a href="#metodo">Il metodo</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Percorsi</h4>
+      <ul>
+        <li><a href="#percorsi">Neofilo</a></li>
+        <li><a href="#percorsi">Mi alleno gi&agrave;</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Contatti</h4>
+      <ul>
+        <li><a href="https://wa.me/393272345980" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="https://www.instagram.com/salvatore_ruberto90/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Salvatore Ruberto &ndash; Personal Coach. Tutti i diritti riservati.</span>
+    <span class="footer-credit">by <a href="https://www.instagram.com/rosatocinzia/" target="_blank" rel="noopener"><strong>Cinzia Rosato</strong></a></span>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/393272345980" class="wa-float" target="_blank" rel="noopener" aria-label="Scrivici su WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
