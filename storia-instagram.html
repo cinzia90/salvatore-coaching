@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Storia Instagram – Salvatore Ruberto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .story {
+      width: 1080px;
+      height: 1920px;
+      background: #0D0D0D;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 110px 90px 130px;
+      transform-origin: top left;
+      transform: scale(0.44);
+      margin: 0 auto;
+    }
+
+    /* sfondo con gradiente oro */
+    .story::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 80% 10%, rgba(201,162,39,0.18) 0%, transparent 55%),
+        radial-gradient(ellipse at 20% 90%, rgba(201,162,39,0.12) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    /* linea oro verticale decorativa */
+    .story::after {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 3px;
+      background: linear-gradient(to bottom, transparent, #C9A227, transparent);
+    }
+
+    /* TOP */
+    .top {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo-text {
+      font-family: 'Oswald', sans-serif;
+      font-size: 52px;
+      font-weight: 700;
+      color: #C9A227;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+    }
+
+    .logo-sub {
+      font-size: 24px;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    /* CENTRO */
+    .center {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(201,162,39,0.15);
+      border: 1px solid rgba(201,162,39,0.35);
+      color: #C9A227;
+      font-size: 24px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      padding: 14px 32px;
+      border-radius: 40px;
+      width: fit-content;
+    }
+
+    .headline {
+      font-family: 'Oswald', sans-serif;
+      font-size: 128px;
+      font-weight: 700;
+      color: #F0F0F0;
+      line-height: 1.05;
+      text-transform: uppercase;
+    }
+
+    .headline em {
+      color: #C9A227;
+      font-style: normal;
+    }
+
+    .body-text {
+      font-size: 36px;
+      color: rgba(240,240,240,0.72);
+      line-height: 1.65;
+      font-weight: 300;
+    }
+
+    .body-text strong {
+      color: #F0F0F0;
+      font-weight: 500;
+    }
+
+    .divider {
+      width: 110px;
+      height: 2px;
+      background: #C9A227;
+      opacity: 0.5;
+    }
+
+    /* BOTTOM */
+    .bottom {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .consulto-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .badge-dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #C9A227;
+      flex-shrink: 0;
+    }
+
+    .badge-text {
+      font-size: 30px;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 0.5px;
+    }
+
+    .badge-text strong {
+      color: #C9A227;
+      font-weight: 600;
+    }
+
+    .cta-box {
+      background: #C9A227;
+      border-radius: 20px;
+      padding: 44px 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cta-label {
+      font-family: 'Oswald', sans-serif;
+      font-size: 42px;
+      font-weight: 600;
+      color: #0D0D0D;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .cta-arrow {
+      font-size: 48px;
+      color: #0D0D0D;
+      font-weight: 700;
+    }
+
+    .link-label {
+      font-size: 26px;
+      color: rgba(255,255,255,0.28);
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    .link-label span {
+      color: rgba(201,162,39,0.6);
+    }
+
+    .swipe-hint {
+      text-align: center;
+      font-size: 26px;
+      color: rgba(255,255,255,0.25);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="story">
+
+    <!-- TOP: brand -->
+    <div class="top">
+      <div class="logo-text">Salvatore Ruberto</div>
+      <div class="logo-sub">Personal Coach · Coaching Online</div>
+    </div>
+
+    <!-- CENTRO: messaggio -->
+    <div class="center">
+      <span class="tag">Nuovi percorsi disponibili</span>
+
+      <h1 class="headline">
+        Allenati.<br>
+        Migliora.<br>
+        <em>Vinci.</em>
+      </h1>
+
+      <div class="divider"></div>
+
+      <p class="body-text">
+        Che tu stia muovendo i <strong>primi passi</strong> o voglia
+        finalmente allenarti con un <strong>metodo serio</strong> —
+        costruiamo insieme il tuo cambiamento.
+      </p>
+    </div>
+
+    <!-- BOTTOM: CTA -->
+    <div class="bottom">
+      <div class="consulto-badge">
+        <div class="badge-dot"></div>
+        <div class="badge-text">Consulto iniziale <strong>gratuito e senza impegno</strong></div>
+      </div>
+
+      <div class="cta-box">
+        <span class="cta-label">Inizia ora</span>
+        <span class="cta-arrow">&#8594;</span>
+      </div>
+
+      <div class="link-label">
+        <span>salvatore-coaching.netlify.app</span>
+      </div>
+
+      <div class="swipe-hint">Clicca link in bio</div>
+    </div>
+
+  </div>
+</body>
+</html>

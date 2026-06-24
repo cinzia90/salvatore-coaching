@@ -506,6 +506,29 @@ footer {
 }
 
 @media (max-width: 768px) {
+  body {
+    background-image: none;
+    background-color: var(--dark);
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('../img/sfondo-mobile.png');
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: var(--dark);
+    z-index: -1;
+  }
+  #home     { background: transparent; }
+  #chi-sono { background: rgba(13,13,13,0.88); }
+  #percorsi { background: rgba(13,13,13,0.85); }
+  #metodo   { background: rgba(13,13,13,0.88); }
+  #contatti { background: rgba(13,13,13,0.85); }
+  footer    { background: rgba(7,7,7,0.97); }
+  .hero-photo { display: block; width: 100%; max-width: 100%; height: clamp(280px, 70vw, 380px); order: -1; }
+
   .nav-links { display: none; }
   .hamburger { display: flex; }
   .nav-mobile {
@@ -529,18 +552,20 @@ footer {
     letter-spacing: .08em;
   }
   .nav-mobile .btn-nav { margin-top: 16px; display: inline-block; padding: 13px 28px; text-align: center; }
-  .hero-inner { grid-template-columns: 1fr; gap: 40px; padding: 80px 24px; }
-  .hero-photo { order: -1; max-width: 260px; margin: 0 auto; }
+  .hero-inner { grid-template-columns: 1fr; gap: 32px; padding: 48px 24px 56px; }
+  .hero-photo { order: -1; max-width: 100%; height: clamp(300px, 55vw, 420px); margin: 0 auto; }
   .chisono-inner { grid-template-columns: 1fr; gap: 40px; }
+  .chisono-video { max-height: 56vw; aspect-ratio: 9/16; }
   .galleria-inner { grid-template-columns: 1fr; }
   .video-item video { max-height: 180px; }
   .chisono-photo { max-width: 300px; margin: 0 auto; }
   .percorsi-grid { grid-template-columns: 1fr; }
   .contatti-inner { grid-template-columns: 1fr; gap: 40px; }
   .form-row { grid-template-columns: 1fr; }
-  section { padding: 70px 20px; }
+  section { padding: 56px 20px; }
   .contact-form-box { padding: 28px 24px; }
   .percorso-card { padding: 32px 28px; }
+  .metodo-grid { margin-top: 36px; }
 }
 
 @media (max-width: 540px) {
